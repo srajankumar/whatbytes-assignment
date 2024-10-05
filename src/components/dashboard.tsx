@@ -5,21 +5,12 @@ import Header from "./header";
 import Sidebar from "./sidebar";
 import Image from "next/image";
 
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  TooltipProps,
-} from "recharts";
+import { LineChart, Line, XAxis, Tooltip, TooltipProps } from "recharts";
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -35,7 +26,6 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
