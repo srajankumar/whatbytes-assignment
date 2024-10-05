@@ -32,6 +32,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Input } from "./ui/input";
+import Syllabus from "./syllabus";
 
 interface DataPoint {
   name: string;
@@ -146,7 +147,7 @@ const Dashboard = () => {
         <Sidebar />
         <div className="w-full h-screen md:p-10 p-5">
           <h1 className="text-lg font-medium md:pb-10 pb-5">Skill Test</h1>
-          <div className="grid lg:grid-cols-5 md:gap-10 gap-5">
+          <div className="grid lg:grid-cols-5 gap-5 pb-10">
             <div className="lg:col-span-3 grid gap-5">
               <Card>
                 <CardContent className="pt-6 flex justify-between items-center gap-5">
@@ -160,7 +161,7 @@ const Dashboard = () => {
                     />
                     <div className="flex flex-col gap-1">
                       <h1 className="font-bold">Hyper Text Markup Language</h1>
-                      <p className="text-sm font-semibold text-black/70">
+                      <p className="text-sm font-semibold text-muted-foreground">
                         Questions: 08 | Duration: 15 mins | Submitted on 5 June
                         2021
                       </p>
@@ -251,7 +252,6 @@ const Dashboard = () => {
                   </AlertDialog>
                 </CardContent>
               </Card>
-
               <Card>
                 <CardHeader>
                   <CardTitle>Quick Statistics</CardTitle>
@@ -321,7 +321,6 @@ const Dashboard = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
-
               <Card className="w-full">
                 <CardHeader>
                   <CardTitle>Comparison Graph</CardTitle>
@@ -390,7 +389,8 @@ const Dashboard = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 grid gap-5">
+              <Syllabus />
               <Card>
                 <CardHeader>
                   <CardTitle className="flex justify-between items-center">
